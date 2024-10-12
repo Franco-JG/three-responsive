@@ -12,8 +12,8 @@ main {
 }
 
 section {
-  /* border: 1px solid green; */
-  width: 100%;
+  /* border: 3px solid green; */
+  /* width: 100%; */
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -22,14 +22,22 @@ section {
 }
 
 article {
-  /* border: 1px solid violet; */
-  width: 60%;
+  /* border: 3px solid red; */
+  width: 70%;
+  /* height: 50%; */
   margin: 0 calc(10%);
 }
 
 #c {
+  display: block;
   width: 100%;
-  height: 100%;
+  /* height: 50%; */
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 18px 4px rgba(0,0,0,0.25);
+}
+#c2 {
+  display: block;
+  width: 100%;
   margin-bottom: 10px;
   box-shadow: 5px 5px 18px 4px rgba(0,0,0,0.25);
 }
