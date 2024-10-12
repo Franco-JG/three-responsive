@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  height: 100vh;
+  /* border: 1px solid cyan; */
+  padding: 1em;
+}
+
+main {
+  /* border: 1px solid red; */
+  /* padding: 0; */
+  height: 100%;
+}
+
+section {
+  /* border: 1px solid green; */
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  /* border: 1px solid violet; */
+  width: 60%;
+  margin: 0 calc(10%);
+}
+
+#c {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 18px 4px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 720px){
+  article {
+    width: 100%;
+  }
+}
