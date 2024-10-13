@@ -3,7 +3,7 @@ import type { UserConfig } from "vite";
 
 export default defineConfig({
     server: {
-      host: "192.168.1.38",
+      host: true,
     },
     base: '/three-responsive/',
     build: {

@@ -1,4 +1,4 @@
-import { scene } from './shapes/scene.ts'
+import { template } from './shapes/template.ts'
 import './style.css'
 
-scene()
+template()
