@@ -1,6 +1,5 @@
 import * as THREE from 'three'
-import { createCanvas } from '../components/createCanvas.ts';
-import { resizeRendererToDisplaySize } from '../utils.ts';
+import { createCanvas, resizeRendererAndCamera } from '../utils.ts';
 
 export const scene = () => {
 
@@ -32,13 +31,8 @@ Ea ut nisi mollit quis. Aliquip cupidatat irure nisi quis consectetur esse magna
 	
 
 	function animate() {
-		
-		if(resizeRendererToDisplaySize(renderer)){
-			const canvas =  renderer.domElement;
-			camera.aspect = canvas.clientWidth/canvas.clientHeight
-			camera.updateProjectionMatrix()
-			console.log('resize')
-		}
+
+		resizeRendererAndCamera(renderer, camera)
 
     cube.rotation.x += 0.01;
     cube.rotation.y += 0.01;
